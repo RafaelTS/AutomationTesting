@@ -22,8 +22,8 @@ public class MudarParaTests extends BaseTest {
 		menuPage.acessarAlerts();
 		
 		mudarPara.clicarBotaoAlertSimples();
-		String texto = basePage.alertaObterTexto();
-		assertEquals("I am an alert box!", texto);
+		
+		assertEquals("I am an alert box!" , basePage.alertaObterTexto());	
 		
 	}
 
