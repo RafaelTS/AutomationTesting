@@ -17,5 +17,9 @@ public class MinhaContaPages extends BasePage {
 	public void clicarLogin() {
 		clicarBotao(By.xpath("//input[@name='login']"));
 	}
+	
+	public String obterMensagemSucessoLogin() {
+		return obterTexto(By.xpath("//div[@class='woocommerce-MyAccount-content']"));
+	}
 
 }

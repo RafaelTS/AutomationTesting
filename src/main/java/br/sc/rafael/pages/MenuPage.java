@@ -21,6 +21,13 @@ public class MenuPage extends BasePage {
 		clicarLink("My Account");
 		
 	}
-
-
+	
+	public void acessarShop() {
+		clicarLink("Shop");
+	}
+	
+	public void escolherSelenium() {
+		clicarLink("selenium");
+		
+	}
 }

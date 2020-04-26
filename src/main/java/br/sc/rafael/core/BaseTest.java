@@ -19,26 +19,28 @@ import br.sc.rafael.pages.AcessoSite;
 public class BaseTest {
 
 	AcessoSite acessoSite = new AcessoSite();
-	
+
 	@Rule
 	public TestName testName = new TestName();
-	
+
 	@Before
 	public void inicializaPagina() {
 		acessoSite.acessarTelaPrincipal();
-		
+
 	}
-	
+
 	@After
 	public void finaliza() throws IOException {
-		TakesScreenshot takecreen = (TakesScreenshot) getDriver();
-		File arquivo = takecreen.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(arquivo, new File("target" + File.separator + testName.getMethodName() + ".jpg"));
-		
-		if(Propriedades.FECHAR_BROWSER) {
-			killDriver();
-			
+		try {
+			TakesScreenshot ss = (TakesScreenshot) getDriver();
+			File arquivo = ss.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(arquivo, new File(
+					"target" + File.separator + "screenshot" + File.separator + testName.getMethodName() + ".jpg"));
+		} finally {
+
+			if (Propriedades.FECHAR_BROWSER) {
+				killDriver();
+			}
 		}
-		
 	}
 }

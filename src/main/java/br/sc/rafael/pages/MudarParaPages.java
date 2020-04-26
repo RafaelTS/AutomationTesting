@@ -13,8 +13,4 @@ public class MudarParaPages extends BasePage {
 		
 	}
 	
-	public String lerAlert(String msg) {
-		return alertaObterTexto();
-	}
-
 }
