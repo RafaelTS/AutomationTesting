@@ -23,7 +23,7 @@ public class DriverFactory {
 				break;
 			}
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		return driver;
 	}
