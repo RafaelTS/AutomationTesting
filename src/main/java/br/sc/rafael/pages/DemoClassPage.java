@@ -6,8 +6,8 @@ import br.sc.rafael.core.BasePage;
 
 public class DemoClassPage extends BasePage {
 
-//	coloquei diversos tipos de busca por seletores, n„o mantendo padr„o, para demonstrar que faÁo as buscas de v·rias formas.
-//	Caso fosse escolher um padr„o, a sugest„o È sempre fazer sem xpath,ou, com um xpath mais limpo possÌvel.
+//	coloquei diversos tipos de busca por seletores, n√£o mantendo padr√£o, para demonstrar que fa√ßo as buscas de v√°rias formas.
+//	Caso fosse escolher um padr√£o, a sugest√£o √© sempre fazer sem xpath,ou, com um xpath mais limpo poss√≠vel.
 	public void setNome(String nome) {
 		escrever(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[1]/div[1]/input"), nome);
 
