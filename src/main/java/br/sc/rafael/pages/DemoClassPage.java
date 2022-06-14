@@ -32,7 +32,7 @@ public class DemoClassPage extends BasePage {
 	}
 
 	public void setPais(String pais) {
-		selecionarCombo("countries", pais);
+		selecionarCombo("select2-country-container", pais);
 	}
 	
 	public void setAno(String ano) {

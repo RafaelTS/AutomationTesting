@@ -3,14 +3,14 @@ package br.sc.rafael.core;
 import static br.sc.rafael.core.DriverFactory.getDriver;
 import static br.sc.rafael.core.DriverFactory.killDriver;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 

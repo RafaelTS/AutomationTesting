@@ -15,14 +15,14 @@ public class DemoClassTest extends BaseTest {
 	@Test
 	public void inserirUsuario() {
 		
-		//Teste para acessar a página inicial e criar um novo usuário
+		//Teste para acessar a pï¿½gina inicial e criar um novo usuï¿½rio
 		
 		demoPage.setNome("Rafael");
 		demoPage.setSobrenome("Teixeira");
 		demoPage.setEmail("rafaeltorress@gmail.com");
 		demoPage.setTelefone("4899999999");
 		demoPage.setSexoMasculino();
-		demoPage.setPais("Albania");
+		//demoPage.setPais("Australia");
 		demoPage.setAno("1990");
 		demoPage.setMes("May");
 		demoPage.setDia("2");
@@ -30,8 +30,7 @@ public class DemoClassTest extends BaseTest {
 		demoPage.setSenhaDois("Senha!@#32");
 		
 		demoPage.salvar();
-		
-		
+
 	}
 
 }
